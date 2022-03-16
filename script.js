@@ -31,3 +31,12 @@ div.appendChild(h1);
 div.appendChild(p);
 
 container.appendChild(div);
+
+// Event exercises below:
+const buttons = document.querySelectorAll("button");
+
+buttons.forEach((button) => {
+  button.addEventListener("click", () => {
+    alert(button.id);
+  });
+});
